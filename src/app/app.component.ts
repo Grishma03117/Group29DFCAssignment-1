@@ -11,6 +11,7 @@ import { RouterOutlet } from '@angular/router';
 export class AppComponent {
   title = 'DevOpsAssignment';
   number = 0;
+  password = 'testSecurity';
 
   increementNumber(){
     this.number++;
@@ -18,5 +19,9 @@ export class AppComponent {
 
   decreementNumber(){
     this.number--;
+  }
+
+  login() {
+    console.log("To check the security hotspot in sonar cloud: ", this.password);
   }
 }
